@@ -73,6 +73,14 @@ tr:hover {
 		font-family:"atomic-age";
 		font-weight:900;
 		margin:5px 0 0 0;
+		
+	}
+
+	#main{
+		overflow:hidden;
+		padding: 20px;
+		background-color:whitesmoke;
+		height: inherit;
 	}
 	.description{
 	margin:5px 0 5px 0;
@@ -98,9 +106,15 @@ tr:hover {
 		width:49.5%;
 		float:left;
 	}
+	
 </style>
 </head>
 <body>
+<div id="main">
+	
+	
+	
+
 	<div id="menu">
 
 <div class="select">
@@ -153,5 +167,6 @@ STRING notepad.exe
 ENTER
 DELAY 1000
 STRING Hello World!</pre>
-</body>
+</div>
+			</body>
 </html>
