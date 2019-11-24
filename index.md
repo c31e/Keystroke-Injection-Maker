@@ -54,7 +54,7 @@ display: none;
 .select select:hover ~ .select__arrow, .select select:focus ~ .select__arrow {
     border-top-color: #000;
 }
-table {
+table {margin-top: 10px;
     border-collapse: collapse;
     width: 100%;
 }
@@ -71,7 +71,7 @@ tr:hover {
 }
 #main {
     overflow: hidden;
-    padding: 20px;
+    padding: 5px;
     background-color: #FAFAFA;
     ;
     height: inherit;
