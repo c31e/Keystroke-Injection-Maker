@@ -2,18 +2,17 @@
 <head>
 <style>
 #code {
-    
     border-style: solid;
     border-width: thin;
     border-color: #000000;
     width: 49.5%;
+    height: 500px;
+    background-color: #FFFFFF;
     float: right;
-	padding: 10px;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
-	margin: 0;
- 
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .select {
     position: relative;
@@ -56,117 +55,91 @@ display: none;
     border-top-color: #000;
 }
 table {
-	margin-top: 20px;
     border-collapse: collapse;
     width: 100%;
 }
 th, td {
-    
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 tr:hover {
     background-color: #f5f5f5;
 }
-	
-	.title{
-		font-family:"atomic-age";
-		font-weight:900;
-		margin:5px 0 0 0;
-		
-	}
-
-	#main{
-		overflow:hidden;
-		padding: 20px;
-		background-color:whitesmoke;
-		height: inherit;
-	}
-	.description{
-	margin:5px 0 5px 0;
-		color:#575757;
-		margin: 10px 0 10px 0; 	
-		
-	}
-	.os{
-		font-size: 13px;
-		float: left;
-		
-		margin: 0;
-	}
-	
-	.type{
-		float: right;
-			font-size: 13px;
-		margin: 0;
-		padding:0;
-		
-	}
-	#menu{
-		width:49.5%;
-		float:left;
-	}
-	
+.title {
+    font-family: "atomic-age";
+    font-weight: 900;
+}
+#main {
+    overflow: hidden;
+    padding: 20px;
+    background-color: #FAFAFA;
+    ;
+    height: inherit;
+}
+.description {
+    color: #575757;
+}
+.os {
+    font-size: 13px;
+    float: left;
+}
+.type {
+    float: right;
+    font-size: 13px;
+    padding: 0;
+}
+#menu {
+    width: 49.5%;
+    float: left;
+}
 </style>
 </head>
 <body>
 <div id="main">
-	
-	
-	
-
-	<div id="menu">
-
-<div class="select">
-  <select>
-    <option>Windows 10</option>
-    <option>Linux</option>
-    <option>Mac OS</option>
-  </select>
-  <div class="select__arrow"></div>
-</div>
-<div class="select">
-  <select>
-    <option>Prank</option>
-    <option>Malicious</option>
-    <option>Reconnaissance</option>
-  </select>
-  <div class="select__arrow"></div>
-</div>
-<table>
-  <tr>
-    	<td>
-		<p class="title">Play Youtube Video</p>
-		<p class="description">Opens up Youtube link in default browser, plays video and makes it full screen.</p>
-	  	<p class="os">Windows 10</p>
-		<p class="type">Prank</p>
-		</td>
-  </tr>
-  <tr>
-    <td>
-		<p class="title">Play Youtube Video</p>
-		<p class="description">Opens up Youtube link in default browser, plays video and makes it full screen.</p>
-	  	<p class="os">Windows 10</p>
-		<p class="type">Prank</p>
-		</td>
-  </tr>
-  <tr>
-    <td>
-		<p class="title">Play Youtube Video</p>
-		<p class="description">Opens up Youtube link in default browser, plays video and makes it full screen.</p>
-	  	<p class="os">Windows 10</p>
-		<p class="type">Prank</p>
-		</td>
-  </tr>
- 
-</table>
-		</div>
-<pre id="code">GUI r
+  <div id="menu">
+    <div class="select">
+      <select>
+        <option>Windows 10</option>
+        <option>Linux</option>
+        <option>Mac OS</option>
+      </select>
+      <div class="select__arrow"></div>
+    </div>
+    <div class="select">
+      <select>
+        <option>Prank</option>
+        <option>Malicious</option>
+        <option>Reconnaissance</option>
+      </select>
+      <div class="select__arrow"></div>
+    </div>
+    <table>
+      <tr>
+        <td><p class="title">Play Youtube Video</p>
+          <p class="description">Opens up Youtube link in default browser, plays video and makes it full screen.</p>
+          <p class="os">Windows 10</p>
+          <p class="type">Prank</p></td>
+      </tr>
+      <tr>
+        <td><p class="title">Play Youtube Video</p>
+          <p class="description">Opens up Youtube link in default browser, plays video and makes it full screen.</p>
+          <p class="os">Windows 10</p>
+          <p class="type">Prank</p></td>
+      </tr>
+      <tr>
+        <td><p class="title">Play Youtube Video</p>
+          <p class="description">Opens up Youtube link in default browser, plays video and makes it full screen.</p>
+          <p class="os">Windows 10</p>
+          <p class="type">Prank</p></td>
+      </tr>
+    </table>
+  </div>
+  <pre id="code">GUI r
 DELAY 500
 STRING notepad.exe
 ENTER
 DELAY 1000
 STRING Hello World!</pre>
 </div>
-			</body>
+</body>
 </html>
