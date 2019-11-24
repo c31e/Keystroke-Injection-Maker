@@ -1,5 +1,6 @@
 <html>
 <head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <style>
 #code {
     border-style: solid;
@@ -96,6 +97,7 @@ tr:hover {
 </head>
 <body>
 <div id="main">
+	<button type="button" onclick="start()">Try it</button>
   <div id="menu">
     <div class="select">
       <select>
@@ -113,7 +115,8 @@ tr:hover {
       </select>
       <div class="select__arrow"></div>
     </div>
-    <table>
+	  
+    <table id="mainTable">
       <tr>
         <td><p class="title">Play Youtube Video</p>
           <p class="description">Opens up Youtube link in default browser, plays video and makes it full screen.</p>
@@ -133,6 +136,7 @@ tr:hover {
           <p class="type">Prank</p></td>
       </tr>
     </table>
+	  
   </div>
   <pre id="code">GUI r
 DELAY 500
@@ -142,4 +146,53 @@ DELAY 1000
 STRING Hello World!</pre>
 </div>
 </body>
+	<script>
+		function populate(title,description,os,type) {
+		var table = document.getElementById("mainTable");
+			
+		
+		
+		var titleElement = document.createElement('p');	
+		titleElement.className = "title";
+		titleElement.innerHTML = title;
+			
+		var descriptionElement = document.createElement('p');	
+		descriptionElement.className = "description";
+		descriptionElement.innerHTML = description;
+			
+		var osElement = document.createElement('p');	
+		osElement.className = "os";
+		osElement.innerHTML =os;
+			
+		var typeElement = document.createElement('p');	
+		typeElement.className = "type";
+		typeElement.innerHTML = type;
+			
+			
+		var row = table.insertRow(0);
+		var cell1 = row.insertCell(0);
+		
+		cell1.append(titleElement,descriptionElement,osElement,typeElement);
+		
+		
+		}
+		
+		
+		function start(){
+			$.getJSON("test.json", function(json) {
+    		console.log(json); // this will show the info it in firebug console
+			});
+			
+			
+			
+			populate("wow1","wow2","wow3","wow4");
+			
+		}
+		
+		
+		
+		
+		
+		
+		</script>
 </html>
